@@ -1,0 +1,39 @@
+POST http://localhost:4002/products
+content-type: application/json
+
+{
+    "name": "Caneta Lilás",
+    "price": 3
+}
+
+###
+
+POST http://localhost:4002/products
+content-type: application/json
+
+{
+    "name": "Caderno 96 folhas",
+    "price": 15
+}
+
+###
+
+GET http://localhost:4002/products
+
+###
+
+GET http://localhost:4002/products/8903ef2c-1ebe-4f60-baab-1a88bc201a5a
+
+###
+
+PUT http://localhost:4002/products/2fdeac26-eb10-44d7-9d90-7ccff751e700
+content-type: application/json
+
+{
+    "name": "Caneta Azul",
+    "price": 10.00
+}
+
+###
+
+DELETE http://localhost:4002/products/47d4be20-f217-46e1-bdd7-80d2785b47cd
